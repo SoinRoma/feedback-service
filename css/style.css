@@ -1,0 +1,266 @@
+@font-face {
+    font-family: "Craftwork Grotesk";
+    src: url("../fonts/CraftworkGrotesk-Regular.woff2") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100vh;
+    display: grid;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.man {
+    max-width: 600px;
+    width: 90%;
+    justify-self: center;
+}
+
+.right {
+    background-color: #353365;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-block {
+    max-width: 500px;
+    width: 90%;
+    margin: 50px 0;
+}
+
+.title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.rating-title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.comment-title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+#comment {
+    background-color: #353365;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0 50px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 25px;
+    max-width: 525px;
+    width: 98%;
+    outline: none;
+    padding: 0;
+}
+
+#comment:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: #FFFFFF;
+    color: #353365;
+    height: 50px;
+    border: #FFFFFF;
+    border-radius: 5px;
+    max-width: 525px;
+    width: 98%;
+    cursor: pointer;
+}
+
+.rating {
+    margin-bottom: 50px;
+}
+
+.rating__star {
+    cursor: pointer;
+    color: #FFF;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.rating__star:hover {
+    color: #FFF;
+}
+
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+    margin: 0 0 20px;
+}
+
+.modal-subtitle {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+}
+
+.modal-btn {
+    width: 320px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #353365;
+    border-radius: 10px;
+    border: 1px solid #353365;
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1192px) {
+
+    #comment {
+        width: 80%;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .rating-title {
+        font-size: 20px;
+    }
+
+    .comment-title {
+        font-size: 20px;
+    }
+
+    .rating__star {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 692px) {
+    .wrapper {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .man {
+        max-width: 300px;
+        justify-self: center;
+        align-self: end;
+        width: 90%;
+    }
+
+    .right-block {
+        top: 8%;
+        left: 8%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .rating {
+        margin-bottom: 30px;
+    }
+
+    #comment {
+        width: 99%;
+    }
+
+    .btn {
+        width: 99%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .modal-man {
+        width: 80%;
+    }
+
+    .modal-title {
+        font-size: 30px;
+    }
+
+    .white-popup {
+        padding: 60px 13px 52px;
+    }
+
+    .modal-btn {
+        max-width: 320px;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .rating__star {
+        font-size: 20px;
+    }
+
+}

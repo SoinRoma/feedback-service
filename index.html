@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback-Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="js/popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="left">
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <img src="images/man.svg" alt="man" class="man">
+        </div>
+        <div class="right">
+            <div class="right-block">
+                <div class="title">
+                    The cargo was <br> successfully delivered
+                </div>
+                <form id="form">
+                    <div class="rating-title">
+                        Rate us:
+                    </div>
+                    <div class="rating">
+                        <i class="rating__star far fa-star" id="star1"></i>
+                        <i class="rating__star far fa-star" id="star2"></i>
+                        <i class="rating__star far fa-star" id="star3"></i>
+                        <i class="rating__star far fa-star" id="star4"></i>
+                        <i class="rating__star far fa-star" id="star5"></i>
+                    </div>
+                    <label for="comment" class="comment-title">
+                        Comments on the assessment
+                    </label>
+                    <input type="text" class="input" id="comment" autocomplete="off">
+                    <button type="submit" class="btn">
+                        Send feedback
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="openModal" class="white-popup white-popup__settings mfp-with-anim mfp-hide">
+    <div class="popup-main">
+        <div class="modal-content">
+            <img src="images/modal-man.svg" alt="modal-man" class="modal-man">
+            <h2 class="modal-title">
+                Thank you
+            </h2>
+            <p class="modal-subtitle">Would you like to leave a <br> review on Google?</p>
+            <a href="#" class="modal-btn" >
+                Go to Google
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popup/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
